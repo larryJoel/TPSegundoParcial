@@ -1,0 +1,72 @@
+{
+    "Libros": [
+       {
+          "ID": 1,
+          "Titulo": "El Gran Gatsby",
+          "AutorId": 2,
+          "ISBN": "978-1234567890",
+          " PublicacionAnio": 1925,
+          "Genero": "Ficción",
+          "Descripcion": "Una novela clásica que explora la decadencia de la alta sociedad en la década de 1920.",
+          "Prestado": false,
+          "img":null
+       },
+       {
+          "ID": 2,
+          "Titulo": "1984",
+          "AutorId": 1,
+          "ISBN": "978-0987654321",
+          " PublicacionAnio": 1949,
+          "Genero": "Ciencia Ficción",
+          "Descripcion": "Una distopía que reflexiona sobre la vigilancia estatal y el control totalitario.",
+          "Prestado": true,
+          "img":null
+       }
+    ],
+    "Autores":[
+     {
+         "ID":1,
+         "Nombre":"George Orwell",
+         "Descripcion":"experto en..."
+     
+     },
+     {
+         "ID":2,
+         "Nombre":"F. Scott Fitzgerald",
+         "Descripcion":"experto en..."
+     }
+    ],
+    "Personas": [
+       {
+          "ID": 1,
+          "Nombre": "Juan",
+          "Apellido": "Pérez",
+          "CorreoElectronico": "juan@example.com",
+          "Teléfono": "123-456-7890"
+       },
+       {
+          "ID": 2,
+          "Nombre": "María",
+          "Apellido": "González",
+          "CorreoElectronico": "maria@example.com",
+          "Teléfono": "987-654-3210"
+       }
+    ],
+    "Préstamos": [
+       {
+          "ID": 1,
+          "IDLibro": 1,
+          "IDPersona": 1,
+          "FechaPrestamo": "2023-11-01",
+          "FechaDevolucion": "2023-11-15"
+       },
+       {
+          "ID": 2,
+          "IDLibro": 2,
+          "IDPersonaa": 2,
+          "FechaPrestamo": "2023-10-15",
+          "FechaDevolucion": null
+       }
+    ]
+ }
+ 

@@ -1,0 +1,37 @@
+
+:host {
+    display: block;
+    height: 100vh; 
+    background: url('../../../assets/img/photo-biblio.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+.content{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 655px;
+    width: 900;
+    justify-content: center;
+    align-items: center;
+}
+
+.circulo {
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%; 
+    overflow: hidden; 
+}
+
+.circulo img{
+    width: 200px; 
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;   
+}
+
+.text_autor{
+    color:white;
+}
+
+

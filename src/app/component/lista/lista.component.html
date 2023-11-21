@@ -1,0 +1,39 @@
+<div class="container">
+    <div class="text-center head_table">
+        <h2 class="head_table_title">Listado de Libros</h2>
+        <p class="head_table_subTitle">Bandeja de gestión de libros</p>
+        <p class="head_table_objetive">Este app esta diseñada para registrar información relacionada con la gestión de una biblioteca personal</p>
+        <div class="add_book">
+            <button class="btn btn-info" [routerLink]='"/agregar"'><i class="bi bi-file-earmark-plus-fill"></i> Agregar</button>
+        </div>
+    </div>
+    <table class="datosTabla table table-hover table-striped table-light">
+        <thead>
+          <tr class="table-dark text-center">
+            <th scope="col">Nro.</th>
+            <th scope="col">Nombre del libro</th>
+            <th scope="col">Autor</th>
+            <th scope="col">Editorial</th>
+            <th scope="col">año</th>
+            <th scope="col">Acciones</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let libro of libros">
+            <th scope="row"></th>
+            <td>{{libro.nombre}}</td>
+            <td>{{libro.autor}}</td>
+            <td>{{libro.editorial}}</td>
+            <td>{{libro.anio}}</td>
+            <td class="text-center botonera">
+                <button class="btn btn-success" [routerLink]='"/editar"'><i class="bi bi-pencil-square"></i> Editar</button>
+                <button class="btn btn-danger" [routerLink]='"/eliminar"'><i class="bi bi-trash3-fill"></i> Eliminar</button>
+                <button class="btn btn-warning" [routerLink]='"/mostrar"'><i class="bi bi-eye"></i> Ver</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+</div>
+<div class="container text-center boton_author">
+  <a [routerLink]='"/autores"'>Autores del sitio</a>
+</div>

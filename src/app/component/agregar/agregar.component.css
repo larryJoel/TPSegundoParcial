@@ -1,0 +1,37 @@
+
+:host {
+    display: block;
+    height: 100vh; 
+    background: url('../../../assets/img/photo-biblio.png') no-repeat center center fixed;
+    background-size: cover;
+  }
+
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.box_delete{
+    width: 800px;
+    height: 180px;
+    background-color: rgb(138, 108, 236);
+    text-align: center;
+    padding: 70px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.boton_reg_content{
+    background-color: rgb(25, 19, 196);
+    width: 250px;
+    height: 60px;
+    border-radius: 15px;
+}
+
+.boton_reg{
+    color:white;
+    text-decoration: none;
+} 
